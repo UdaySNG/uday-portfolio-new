@@ -1,0 +1,505 @@
+@use "./mixins";
+
+
+@media (max-width: 768px) {
+  .contain__text {
+    display: none;
+  }
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.profile_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 40rem;
+  height: 40rem;
+  @include mixins.flexCenter;
+
+
+.typed {
+  display: none;
+}
+
+.contain__text{
+  display: none;
+}
+}
+
+@media screen and (max-width: 62.5rem) {
+
+  .header{
+    justify-content: center;
+    align-items: center;
+      font-family: 'Amatic SC', cursive;
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      text-align: center;
+      color:rgb(255, 255, 255);
+      background: rgb(182, 4, 4);
+      height: 15rem;
+      max-width: 100%;
+      border-radius: 0rem 0rem 0.5rem 0.5rem;
+      border: solid black 1rem 1rem 1rem;
+  }
+  
+  .main__title{
+    @include mixins.font-style;
+  
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .direction__buttons{
+
+    display: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  
+  .direction__projects{
+    display: none;
+    position: relative;
+    bottom: 6rem;
+    background-color: black;
+    color: white;
+    height: 5rem;
+    width: 9rem;
+    border-radius: 5%;
+    border: none; 
+    
+  }
+  
+  .direction__cv{
+    display: none;
+    position: relative;
+    bottom: 6rem;
+    background-color: black;
+    color: white;
+    height: 5rem;
+    width: 9rem;
+    border-radius: 5%;
+    border: none; 
+    margin-left: 2rem;
+  }
+
+  .direction__contact{
+    display: none;
+    position: relative;
+    bottom: 6rem;
+    background-color: black;
+    color: white;
+    height: 5rem;
+    width: 9rem;
+    border-radius: 5%;
+    border: none; 
+    margin-left: 2rem;
+  }
+  
+  .search-container {
+      display: flex;
+      justify-content: flex-end;
+      color: white;
+      height: 0.1rem;
+      position: relative;
+      bottom: 3rem;
+   
+    }
+    
+    .search-form {
+      display: flex;
+      align-items: center;
+      margin-right: 2rem;
+  
+      color: white;
+    }
+    
+    .search-form input[type="text"] {
+      cursor: text;
+      margin-right: 10px;
+      background: rgb(255, 255, 255);
+      border-radius: 4rem;
+      border: none;
+      height: 4rem;
+      width: 18rem;
+      padding-left: 2rem;
+    }
+  
+    .search-form input[type="text"]::placeholder {
+      color: rgb(0, 0, 0);
+    }
+    
+  
+    .submit__search{
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      font-size: 3rem;
+    }
+  
+  
+  
+  .icon__heading{
+      display: flex;
+      justify-content: center;
+      font-size: 4.2rem;
+      flex-direction: row;
+      list-style: none;
+      gap: 5rem;
+      position: relative;
+  
+  }
+
+  .contain__text {
+    display: none;
+  }
+
+  .typed{
+
+      display: none;
+    
+  }
+
+  .profile__picture{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2rem;
+    position: relative;
+    top: 2rem;
+    left: 1.9rem;
+
+  }
+
+  .profile__size{
+    height: 20rem;
+    width: 20rem;
+  }
+  
+  .profile_container{
+      width: 20rem;
+      height: 20rem;
+      @include mixins.flexCenter;
+      object-fit: contain; 
+
+  }
+  .project__cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style: none;
+    position: relative;
+    width: 20rem;
+    margin-left: 10rem;
+    padding: 5rem;
+    
+  }
+
+
+.project__cards--first {
+    cursor: pointer;
+    width:30rem;
+    height: 40rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+
+  }
+
+  .project__first__pic{
+    cursor: pointer;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+
+}
+  
+
+  .project__second__pic{
+    cursor: pointer;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+
+}
+
+.project__third__pic{
+  cursor: pointer;
+  height: 30rem;
+  width: 30rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+
+
+}
+  
+
+  .project__cards--second {
+    height: 30rem;
+    width: 30rem;
+    border-radius: 0.5rem;
+    
+
+
+  }
+
+.project__cards--third {
+    width: 40rem;
+    height: 50rem;
+    border-radius: 0.5rem;
+
+ 
+}
+
+  .button__bar{
+    display: flex;
+   position: absolute;
+    height: 4rem;
+    width:4rem;
+    background-color: black;
+    border-radius: 0rem 0rem 0.1rem 0.1rem;
+    color: white;
+
+}
+
+.view__code-buttons{
+  cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2.5rem;
+    font-family: sans-serif;
+  
+}
+
+
+.typed {
+  display: none;
+}
+
+.contain__text{
+  display: none;
+}
+  
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  height: 0.1rem;
+  position: relative;
+  bottom: 3rem;
+
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+
+  color: white;
+}
+
+.search-form input[type="text"] {
+  display: none;
+}
+
+.search-form input[type="text"]::placeholder {
+  color: rgb(0, 0, 0);
+}
+
+
+.submit__search{
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-size: 3rem;
+}
+
+
+
+
+
+.about__me {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 25rem;
+  width: 70rem;
+  color: white;
+  gap: 3rem;
+  background: rgb(182, 4, 4);
+  border-radius: 1rem 1rem 1rem 1rem;
+  margin-top: 45rem;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.about__who {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 30rem;
+  font-size: 4rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.about__info {
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 50rem;
+  height: 60rem;
+  margin-left: 2rem;
+  font-size: 1rem;
+  flex-shrink: 2;
+  padding-right: 1rem;
+}
+
+.mijn__cv__extra{
+  color: black;
+  text-decoration: underline;
+  border: none;
+}
+
+.read__more{
+  cursor: pointer;
+  border: none;
+  margin-top: 2rem;
+  height: 7rem;
+  width: 18rem;
+  color: white;
+  background-color: black;
+  border-radius: 1rem 1rem 1rem 1rem;
+  font-size: 2.5rem;
+}
+
+.read__more__a{
+  color: white;
+}
+
+.skills {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.skills__showcase__container {
+  overflow: visible;
+}
+
+
+.skill__sizes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 8rem;
+  width: 100%;
+  max-width: 20rem;
+  height: 20rem;
+  background: rgb(23, 24, 23);
+  color: white;
+  border-radius: 1rem;
+}
+
+
+
+.contact__me {
+  background: rgb(182, 4, 4);
+  border-radius: 1rem 1rem 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  top: 20rem;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+}
+
+.contact__me__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 0;
+  width: 100%;
+}
+
+.contact__form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact__form input,
+.contact__form textarea {
+  margin-bottom: 10px;
+  height: 5rem;
+  width: 100%;
+}
+
+.contact__form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  height: 10rem;
+  max-width: 100%;
+  background: rgb(182, 4, 4);
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+}
+
+.footer__title{
+  font-size: 2.2rem;
+  @include mixins.font-style;
+}
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .contain__text {
+    height: auto; /* Pas de hoogte aan naar wens */
+  }
+
+  .typed {
+    font-size: 3rem; /* Pas de gewenste fontgrootte aan */
+  }
+}
+
+/* Mediaquery voor schermen kleiner dan 480px */
+@media screen and (max-width: 480px) {
+  .typed {
+    font-size: 2rem; /* Pas de gewenste fontgrootte aan */
+  }
+}
